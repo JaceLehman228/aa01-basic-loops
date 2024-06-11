@@ -7,8 +7,12 @@ high numbers.
 */
 
 // Your code here 
-
-// logBetween(-1, 2);
+function logBetween(num1, num2) {
+    for (let i = num1; i <= num2; i++) {
+        console.log(i);
+    }
+}
+logBetween(-1, 2);
 /* prints out:
 -1
 0
