@@ -5,7 +5,11 @@ half of characters in the string parameter.
 */
 
 function firstHalf(str) {
-  // Your code here 
+  let newStr = '';
+  for (let i = 0; i < str.length/2; i++) {
+    newStr += str[i];
+  }
+  return newStr;
 }
 
 // console.log(firstHalf('academy')); // 'acad'

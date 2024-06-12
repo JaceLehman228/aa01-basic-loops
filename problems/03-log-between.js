@@ -12,7 +12,7 @@ function logBetween(num1, num2) {
         console.log(i);
     }
 }
-logBetween(-1, 2);
+// logBetween(-1, 2);
 /* prints out:
 -1
 0
