@@ -4,9 +4,11 @@ return a new string where the order of the characters is reversed.
 */
 
 // Your code here 
-
-// console.log(reverseString('fish')); // 'hsif'
-// console.log(reverseString('marathon')); // 'nohtaram'
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+ // console.log(reverseString('fish')); // 'hsif'
+ // console.log(reverseString('marathon')); // 'nohtaram'
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = reverseString;

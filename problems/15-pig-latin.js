@@ -17,12 +17,25 @@ So the two rules for our version of Pig Latin are:
 */
 
 function pigLatinWord(word) {
-    // Your code here 
+    let letters = 'aeiou';
+    if (word[0] === 'a' || word[0] === 'e' || word[0] === 'i' || word[0] === 'o' || word[0] === 'u') {
+        word += 'yay';
+        return word;
+    } else {
+        for (let i = 0; i < word.length; i++) {
+            if (letters.includes(word[i])) {
+                let firstHalf = word.slice(i);
+                let secondHalf = word.slice(0, i);
+                return firstHalf + secondHalf + 'ay';
+            }
+        }
+        
+        
+    }
 };
-
-// console.log(pigLatinWord("apple")); //=> "appleyay"
+console.log(pigLatinWord("apple")); //=> "appleyay"
 // console.log(pigLatinWord("eat")); //=> "eatyay"
-// console.log(pigLatinWord("banana")); //=> "ananabay"
+console.log(pigLatinWord("banana")); //=> "ananabay"
 // console.log(pigLatinWord("trash")); //=> "ashtray"
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
