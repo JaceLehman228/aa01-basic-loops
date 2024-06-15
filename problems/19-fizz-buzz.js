@@ -4,7 +4,15 @@ Define a function fizzBuzz(max) that takes a number and prints every number from
 */
 
 // Your code here 
-
+function fizzBuzz(max) {
+    for (let i = 0; i < max; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+        } else if (i % 3 === 0 || i % 5 === 0) {
+            console.log(i);
+        } 
+    }
+}
+console.log(fizzBuzz(20));
 // fizzBuzz(20); // prints out:
 /*
 3

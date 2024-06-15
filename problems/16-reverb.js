@@ -8,7 +8,20 @@ Vowels are the letters "a", "e", "i", "o", "u".
 */
 
 // Your code here 
-
+function reverb (word) {
+    letters = 'aeiouAEIOU';
+    for (let i = 0; i < word.length; i++) {
+        if (letters.includes(word[word.length - i])) {
+            let shortSubStr = word.substring(word.length - i); 
+            return word + shortSubStr; 
+        }
+    }
+    if (typeof(word) == typeof(0)) {
+        return null
+    } else {
+        return word;
+    }
+}
 // console.log(reverb('running')); // runninging
 // console.log(reverb('FAMILY'));  // FAMILYILY
 // console.log(reverb('trash'));   // trashash
